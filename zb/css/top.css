@@ -1,0 +1,166 @@
+
+#top{
+	width:1150px;
+	height:71px;
+	margin:0 auto;
+	margin-top:50px;
+}
+#top_b{
+	width:432px;
+	height:71px;
+	float:left;
+	background:url(../images/top_bg.jpg) no-repeat;
+}
+#find{
+	width:365px;
+	height:45px;
+	float:left;
+	margin-top:20px;
+	background:url(../images/find.jpg) no-repeat;
+}
+ input{
+	width:273px;
+	height:24px;
+	vertical-align:top;
+	margin-top:9px;
+	margin-left:12px;
+	border:none;
+	line-height:25px;
+	outline:none;
+}
+img{
+	border:none;
+}
+/*导航栏部分*/
+#nav{
+	width:100%px;
+	height:40px;
+	margin:15px auto;
+	background:url(../images/nav_bg.gif);
+}
+#all_ul {
+	width:1212px;
+	height:36px;
+	margin:auto;
+	padding-top:2px;
+}
+#all_ul li {
+	width:114px;
+	height:34px;
+	float:left;
+	position: relative;
+}
+#all_ul li a{
+	text-align:center;
+	line-height:36px;
+	display:block;
+	font-size:12px;
+	font-family:微软雅黑;
+	color:#fff;
+}
+#all_ul li a:hover{
+	height:36px;
+}
+#all_ul li:hover .nav_ul{
+    display: block;
+}
+#all_ul li .nav_ul { 
+	width:108px;
+	position: absolute;
+	top:36px;
+	background: #3cbcbc;
+	display:none;
+	opacity:0.9;
+	margin-left:3px;
+	border:1px solid #279896;
+}
+#all_ul li ul.nav_ul li{
+	height:32px;
+	width:108px;
+	line-height:6px;
+	clear: both;
+	font-size:13px;
+	margin:auto;
+	border-bottom:1px solid #279896;
+}
+#all_ul li ul.nav_ul li a {
+	width: 110px;
+}
+#all_ul li ul.nav_ul li a:hover{
+	height:32px;
+	width:108px;
+	background:#f0880d;
+}
+
+#bottom{
+	width:1160px;
+	height:100px;
+	margin-top:2px;
+	margin:auto;
+	font-size:12px;
+	font-family:微软雅黑;
+}
+#b1{
+	width:200px;
+	height:65px;
+	margin-left:10px;
+	float:left;
+	background:url(../images/logob1.gif) no-repeat;
+}
+#b2{
+	width:335px;
+	height:60px;
+	margin-top:5px;
+	margin-left:10px;
+	line-height:20px;
+	float:left;
+	font-family:微软雅黑;
+	color:#575757;
+}
+#b3{
+	width:240px;
+	height:65px;
+	margin-left:20px;
+	float:left;
+	background:url(../images/b4.jpg) no-repeat 3px 4px;
+}
+#b3_right{
+	width:160px;
+	height:65px;
+	float:right;
+}
+#b3_right span{
+	font-family:微软雅黑;
+	color:#575757;
+	display:block;
+	margin-top:5px;
+}
+#b3_right img{
+	border:none;
+	margin-top:5px;
+}
+#b4_right{
+	width:160px;
+	height:40px;
+	margin-top:10px;
+	float:right;
+}
+#b4{
+	width:240px;
+	height:65px;
+	margin-left:20px;
+	float:left;
+	background:url(../images/if.jpg) no-repeat;
+}
+#b4_right span{
+	font-family:微软雅黑;
+	color:#575757;
+	display:block;
+	margin-top:7px;
+}
+#b4_right a{
+	color:#575757;
+}
+#b4_right a:hover{
+	color:#37b7b6
+}

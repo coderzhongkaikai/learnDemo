@@ -1,0 +1,100 @@
+@charset "utf-8";
+$font:Arial, "微软雅黑";
+$color:#7330b7;
+$white:#fff;
+$blue:#252586;
+
+@mixin radius($r:5rem){
+  -moz-border-radius:$r;
+  -webkit-border-radius: $r;
+  border-radius:$r;
+}
+@mixin height($h:.1rem){
+  height:$h; overflow:hidden; clear:both;
+}
+@mixin absolute($p:absolute, $z:10, $l:auto, $t:auto, $r:auto, $b:auto){
+  position: $p;
+  z-index: $z;
+  left: $l;
+  right: $r;
+  top: $t;
+  bottom: $b;
+}
+@mixin before(){
+  content: ""; display: block;
+  position: absolute;
+}
+@mixin scale($s:1.2){
+  transform: scale($s);
+  -webkit-transform: scale($s);
+  -moz-transform: scale($s);
+  -o-transform: scale($s);
+}
+@mixin radiusLT($r:.1rem){
+  border-top-left-radius: $r;
+  -webkit-border-top-left-radius: $r;
+}
+@mixin radiusLB($r:.1rem){
+  border-bottom-left-radius: $r;
+  -webkit-border-bottom-left-radius: $r;
+}
+@mixin radiusRT($r:.1rem){
+  border-top-right-radius: $r;
+  -webkit-border-top-right-radius: $r;
+}
+@mixin radiusRB($r:.1rem){
+  border-bottom-right-radius: $r;
+  -webkit-border-bottom-right-radius: $r;
+}
+@mixin shadow($s){
+  box-shadow: $s;
+  -webkit-box-shadow: $s;
+  -moz-box-shadow: $s;
+}
+
+a, .transition, :before, img, .nav{
+  $time:0.3s;
+  transition:All $time linear;
+  -webkit-transition:All $time linear;
+  -moz-transition:All $time linear;
+  -o-transition:All $time linear;
+}
+.ellipsis{overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+.flex{
+  display: flex;
+  display: -webkit-flex;
+}
+.flexColumn{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+.itemsCenter{
+  align-items: center;
+  -webkit-align-items: center;
+}
+.justifyCenter{
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.flexAround{
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+.flexBetween{
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.flexWrap{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.morePublic{display: block; width: .32rem; height: .46rem; background: url("../image/more18.png") center no-repeat; background-size: .18rem; @include absolute($t:0, $r:0);
+  &:hover{background-image: url("../image/more18on.png")}
+}
+.pPublic{text-transform: uppercase; font-family: 'raleway'; font-weight: 400}
