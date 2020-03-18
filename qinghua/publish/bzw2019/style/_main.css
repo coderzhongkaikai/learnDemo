@@ -1,0 +1,17 @@
+/* Error: Undefined variable.
+ *    ,
+ * 11 |   font-size:.12rem; font-family:$font; color:#333; -webkit-text-size-adjust:none
+ *    |                                 ^^^^^
+ *    '
+ *   _main.scss 11:33  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 11 \2502    font-size:.12rem; font-family:$font; color:#333; -webkit-text-size-adjust:none\d\a    \2502                                  ^^^^^\a    \2575 \a   _main.scss 11:33  root stylesheet";
+}

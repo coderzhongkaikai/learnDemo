@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 a, .transition, .head .topSearch .form, .indexPart1 .fr li a .time, .indexPart2 ul li .bg, .major .list li .name, .video .list a .img, .video .list a .name, .righttools .sharewrapper, :before, img, .nav {
   transition: All 0.3s linear;
   -webkit-transition: All 0.3s linear;
@@ -1620,5 +1620,3 @@ video {
   top: 20px;
   right: 30px;
   cursor: pointer; }
-
-/*# sourceMappingURL=index.css.map */

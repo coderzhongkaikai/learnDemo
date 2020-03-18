@@ -1,0 +1,76 @@
+a, .transition, :before, img, .nav {
+  transition: All 0.3s linear;
+  -webkit-transition: All 0.3s linear;
+  -moz-transition: All 0.3s linear;
+  -o-transition: All 0.3s linear;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.flex {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flexColumn {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.itemsCenter {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.justifyCenter {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.flexAround {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.flexBetween {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.flexWrap {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.morePublic {
+  display: block;
+  width: 0.32rem;
+  height: 0.46rem;
+  background: url("../image/more18.png") center no-repeat;
+  background-size: 0.18rem;
+  position: absolute;
+  z-index: 10;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: auto;
+}
+.morePublic:hover {
+  background-image: url("../image/more18on.png");
+}
+
+.pPublic {
+  text-transform: uppercase;
+  font-family: "raleway";
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=_public.css.map */
