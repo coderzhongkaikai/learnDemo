@@ -81,9 +81,11 @@ body {
 a {
   color: #333;
   text-decoration: none;
-  outline: none; }
+  outline: none; 
+}
   a:active {
-    star: expression(this.onFocus=this.blur()); }
+    star: expression(this.onFocus=this.blur()); 
+  }
   a:link {
     text-decoration: none;
     outline: none; }

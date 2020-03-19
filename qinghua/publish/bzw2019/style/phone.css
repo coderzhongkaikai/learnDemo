@@ -63,7 +63,8 @@ a, .transition, :before, img, .nav {
 
 @media screen and (max-width: 800px) {
   html {
-    font-size: 50px; }
+    font-size: 50px; 
+  }
 
   body {
     font-size: .24rem; }
@@ -72,7 +73,8 @@ a, .transition, :before, img, .nav {
     max-width: 8rem; }
 
   .headD {
-    height: 1rem; }
+    height: 1rem; 
+  }
 
   body.navShow {
     overflow: hidden; }
