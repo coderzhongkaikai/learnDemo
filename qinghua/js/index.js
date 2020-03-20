@@ -17,6 +17,9 @@ function fontSize() {
    var winW = $(window).width();
    if (winW <= 1500 && winW > 800) {
        size = Math.round(winW / 15);
+       if(size==85){
+           size=84
+       }
    } else if (winW <= 800) {
        size = Math.round(winW / 7.5);
        if (size > 65) {

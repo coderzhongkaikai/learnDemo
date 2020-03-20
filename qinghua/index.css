@@ -27,7 +27,14 @@ body {
 }
 
 
-
+.flex, .head .btn, .nav ul, .indexFlash .dots, .indexPart1 .fl li a, .indexPart1 .fr li a, .indexPart2 .container, .indexPart3 .fl .dots, .major .list li .container .title2, .major .list li .container .btn, .pageNum, .pageNum div, .channel .title {
+    display: flex;
+    display: -webkit-flex;
+}
+.itemsCenter, .indexPart1 .fl li a, .indexPart1 .fr li a, .indexPart2 .container, .major .list li .container .title2, .pageNum, .channel .title {
+    align-items: center;
+    -webkit-align-items: center;
+}
 .head a.logo {
     display: block;
     position: absolute;
@@ -820,7 +827,8 @@ a, .transition, :before, img, .nav {
     }
     .nav .btn2, .nav .search {
         display: block;
-    }
+    } 
+  
     
     .nav .btn2 a {
         display: block;
@@ -1032,6 +1040,27 @@ a, .transition, :before, img, .nav {
     .major .list li .container {
         font-size: .24rem;
     }
+    .nav li .list {
+        position: relative;
+        top: 0;
+        width: 100%;
+        border-left: 0;
+        margin-top: 0;
+        box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+        padding: 0 0 .1rem 0;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    .nav li .list a {
+        font-size: .26rem;
+        line-height: .8rem;
+        color: #666;
+        padding-left: 1rem;
+    }
+    
 }
 
 @media screen and (max-width:550px) {
@@ -1054,14 +1083,7 @@ a, .transition, :before, img, .nav {
     flex-shrink: 0;
     -webkit-flex-shrink: 0;
 }
-.flex, .head .btn, .nav ul, .indexFlash .dots, .indexPart1 .fl li a, .indexPart1 .fr li a, .indexPart2 .container, .indexPart3 .fl .dots, .major .list li .container .title2, .major .list li .container .btn, .pageNum, .pageNum div, .channel .title {
-    display: flex;
-    display: -webkit-flex;
-}
-.itemsCenter, .indexPart1 .fl li a, .indexPart1 .fr li a, .indexPart2 .container, .major .list li .container .title2, .pageNum, .channel .title {
-    align-items: center;
-    -webkit-align-items: center;
-}
+
 
 .major .list li .container .title2 {
     font-size: .18rem;
