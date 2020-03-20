@@ -6,9 +6,8 @@
     <title>清华页面</title>
     </title>
     <link rel="stylesheet" href="./index.css" />
-    <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
-    <script type="text/javascript"src="./js/searchsub.js"></script>
-
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"src="./js/index.js"></script>
 </head>
 
 <body>
@@ -124,8 +123,8 @@
                     </li>
                 </ul>
 
-                <!-- <div class="btn2"><a href="http://bk.join-tsinghua.edu.cn/bz.wsbm_login.jsp?err=null">网上报名 Apply Now</a>
-                </div>  -->
+                <div class="btn2"><a href="http://bk.join-tsinghua.edu.cn/bz.wsbm_login.jsp?err=null">网上报名 Apply Now</a>
+                </div> 
                 <div class="search">
                     <form id="searchForm">
                         <input name="ie" type="hidden" value="utf8">
@@ -554,7 +553,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="fr list">
+            <div class="fr list listbox">
                 <div class="title">按照院系分类</div>
                 <ul>
                     <li>
@@ -671,7 +670,23 @@
             </div>
         </div>
     </div>
-
+    <div class="righttools">
+        <div class="i icon-angle-up topA" id="toup" title="返回顶部"></div>
+        <div class="i icon-share" title="分享" id="share"></div>
+        <div class="sharewrapper bdsharebuttonbox bdshare-button-style0-16" data-tag="share_1" data-bd-bind="1584697904698">
+            <a class="i icon-wechat" title="微信" id="wechatshare" data-cmd="weixin"></a>
+            <a class="i icon-weibo" title="微博" id="weiboshare" data-cmd="tsina"></a>
+            <a class="i icon-qq" title="QQ好友" id="qqshare" data-cmd="sqq"></a>
+        </div>
+        <script>
+            window._bd_share_config = {
+                share : [{
+                    "tag" : "share_1"
+                }]
+            };
+            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
 
 </body>
 
