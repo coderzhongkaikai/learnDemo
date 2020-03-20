@@ -24,10 +24,7 @@ body {
     background: #fff;
 }
 
-.head .wal {
-    height: 1.21rem;
-    position: relative;
-}
+
 
 .head a.logo {
     display: block;
@@ -44,10 +41,7 @@ body {
   
 }
 
-.head .wal {
-    height: 1.21rem;
-    position: relative;
-}
+
 
 a {
     color: #333;
@@ -103,14 +97,15 @@ li {
     max-width: 100%;
     border: 0; 
 }
+.head .btn a.btn-1:hover {
+    background: none;
+    color: #008acf;
+}
 .head .wal {
     height: 1.21rem;
     position: relative;
 }
-.wal {
-    max-width: 14rem;
-    margin: 0 auto;
-}
+
 .head a.logo {
     display: block;
     position: absolute;
@@ -176,13 +171,13 @@ li {
 }
 
 
-@media screen and (max-width: 550px) {
-    .wal {
-      margin: 0 .3rem; } 
-    }
-  
-@media screen and (min-width: 800px){
 
+
+@media screen and (min-width:800px){
+    .wal {
+        max-width: 8rem ;
+    }
+    
     .nav li:hover a.name {
         color: #7330b7;
     }
@@ -215,98 +210,20 @@ li {
         -moz-transition: opacity 0.3s linear;
         -o-transition: opacity 0.3s linear;
     }
-}
-@media screen and (max-width:800px){
-    html {
-        font-size: 50px; 
-      }
+  
     
-      body {
-        font-size: .24rem; }
-    
-      .wal {
-        max-width: 8rem; 
-      }
-    
-      .headD {
-        height: 1rem; 
-      }
-      .head a.logo {
-        width: 4rem;
-    }
-    
-    .head .wal {
-        height: 1rem;
-    }
-    .head .navA {
-        display: block;
-        position: absolute;
-        z-index: 10;
-        left: auto;
-        right: -0.3rem;
-        top: 0;
-        bottom: auto;
-        width: .9rem;
-        height: 1rem;
-        background: url(./image/navA.png) center no-repeat;
-        background-size: .4rem;
-    }
-    .head .btn, .head .topSearch {
-        display: none;
-    }
-    .nav {
-        position: fixed;
-        top: 1rem;
-        height: 100%;
-        overflow-y: auto;
-        width: 5.6rem;
-        background: #fff;
-        right: -5.6rem;
-        padding-bottom: 1rem;
-    }
-    .nav ul {
-        flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-    }
-    .nav .btn2 {
-        padding: .5rem .54rem;
-    }
-    .nav .btn2, .nav .search {
-        display: block;
-    }
-    .nav .search {
-        background: #f1f1f1;
-        height: .9rem;
-        position: relative;
-    }
-    .nav li {
-        border-bottom: #e7e7e7 solid 1px;
-        width: 100%;
-    }
-    .nav li a.name {
-        padding: 0 .5rem;
-        height: 1rem;
-        line-height: 1rem;
-        font-size: .32rem;
-        text-align: left;
-    }
-    .nav li .list {
-        position: relative;
-        top: 0;
-        width: 100%;
-        border-left: 0;
-        margin-top: 0;
-        box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
-        -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
-        -moz-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
-        padding: 0 0 .1rem 0;
-        opacity: 1;
-        visibility: visible;
-        display: none;
-    }
 }
 
 
+
+.wal {
+    max-width: 14rem;
+    margin: 0 auto;
+}
+a, .transition, :before, img, .nav {
+    transition: All 0.3s linear;
+    -webkit-transition: All 0.3s linear;
+}
 
 
 
@@ -456,4 +373,537 @@ textarea, input {
 }
 .nav li .list .list2 a {
     padding-left: .28rem;
+}
+
+.head .topSearch .submit input {
+    width: 100%;
+    height: .4rem;
+    cursor: pointer;
+}
+.pageBanner {
+    height: 4.5rem;
+    background: center top no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.pageBanner .title {
+    color: #fff;
+}
+.pageBanner .title h2 {
+    font-size: .48rem;
+    padding: 1.52rem 0 0 0;
+}
+.pageBanner .title p {
+    font-size: .3rem;
+}
+.pPublic, .indexPart1 .fl .title p, .indexPart1 .fr .title p, .indexPart1 .fr a.btn p, .indexPart2 ul li p, .indexPart2 .container .title p, .indexPart3 .title p, .pageBanner .title p {
+    text-transform: uppercase;
+    font-family: 'raleway';
+    font-weight: 400;
+}
+.indexPart2 .container .title p, .indexPart3 .title p, .pageBanner .title p {
+    text-transform: uppercase;
+    font-family: 'raleway';
+    font-weight: 400;
+}
+
+.pageBanner .bg {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    right: auto;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: .7rem;
+    margin-left: -7rem;
+    padding: .25rem 0 0 .4rem;
+}
+.pageNow {
+    height: .45rem;
+    line-height: .45rem;
+    color: #919191;
+    padding-left: .22rem;
+    background: url(./image/img14.png) left 0.15rem no-repeat;
+    background-size: .14rem;
+}
+.pageNow a {
+    color: #919191;
+}
+
+.sideNav {
+    padding: .25rem 0 0 .45rem;
+    width: 2.36rem;
+    position: relative;
+    overflow: hidden;
+}
+.sideNav:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: .35rem;
+    width: 1px;
+    height: 100%;
+    background: #cfd1d1;
+}
+.sideNav li {
+    position: relative;
+    border-bottom: #f0f0f0 solid 1px;
+}
+.sideNav li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -.45rem;
+    top: 10%;
+    width: 3px;
+    background: #7545aa;
+    height: 80%;
+    opacity: 0;
+}
+.sideNav li a {
+    display: block;
+    line-height: .51rem;
+    position: relative;
+    font-size: .16rem;
+    color: #666;
+}
+.sideNav li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -.45rem;
+    top: 50%;
+    width: 3px;
+    background: #7545aa;
+    height: 0;
+    margin-top: 0;
+}
+.sideNav li a:hover:before, .sideNav li a.on:before {
+    height: .3rem;
+    margin-top: -.15rem;
+}
+.sideNav li a:hover, .sideNav li a.on {
+    color: #7545aa;
+}
+.w1085 {
+    width: 10.8rem;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.major h2.title {
+    color: #7330b7;
+    font-size: .32rem;
+    padding: .32rem 0 .22rem 0;
+}
+.major .content {
+    font-size: .16rem;
+    line-height: .28rem;
+    color: #2e414a;
+    text-align: justify;
+    padding-bottom: .6rem;
+}
+.major .list {
+    width: 5.2rem;
+}
+.major .list div.title {
+    background: url(./image/img520_1.jpg) right center no-repeat;
+    background-size: cover;
+    line-height: .64rem;
+    color: #fff;
+    padding-left: .25rem;
+    font-size: .2rem;
+}
+.major .list li {
+    border-bottom: #e2e2e2 solid 1px;
+}
+.major .list li .name {
+    font-size: .16rem;
+    line-height: .55rem;
+    padding-left: .25rem;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    color: #000;
+}
+.major .list li .container {
+    background: #f5f8f8 url(../image/bg1.jpg) center bottom repeat-x;
+    background-size: .08rem;
+    padding: .25rem;
+    font-size: .14rem;
+    display: none;
+}
+.major .list li .container p {
+    line-height: .22rem;
+    color: #676767;
+    text-align: justify;
+}
+
+.major .list li .container .title2 {
+    font-size: .18rem;
+    color: #656565;
+    height: .65rem;
+}
+.major .list li .container .title2 span {
+    padding: 0 .2rem;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+.major .list li .container dd {
+    line-height: .32rem;
+    padding-left: .24rem;
+    color: #676767;
+    position: relative;
+}
+.major .list li .container .more {
+    padding: .25rem 0 .15rem 0;
+}
+.major .list li:nth-child(even) .name {
+    background: #f7f7f7;
+}
+
+.major .list li .name:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: .28rem;
+    background: url(./image/img16.png) center no-repeat;
+    background-size: 100%;
+    width: .16rem;
+    height: 100%;
+}
+.major .list.fr li .name:before {
+    background-image: url(./image/img16-1.png);
+    width: 0.09rem;
+}
+.h50 {
+    height: 1rem;
+    overflow: hidden;
+    clear: both;
+}
+@media screen and (max-width:800px){
+    html {
+        font-size: 50px; 
+      }
+    
+      body {
+        font-size: .24rem; }
+
+
+      .head .wal {
+        height: 1rem;
+    }
+    
+      .headD {
+        height: 1rem; 
+      }
+      .head a.logo {
+        width: 4rem;
+    }
+
+    .head .navA {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: auto;
+        right: -0.3rem;
+        top: 0;
+        bottom: auto;
+        width: .9rem;
+        height: 1rem;
+        background: url(./image/navA.png) center no-repeat;
+        background-size: .4rem;
+    }
+    .head .btn, .head .topSearch {
+        display: none;
+    }
+    .nav {
+        position: fixed;
+        top: 1rem;
+        height: 100%;
+        overflow-y: auto;
+        width: 5.6rem;
+        background: #fff;
+        right: -5.6rem;
+        padding-bottom: 1rem;
+    }
+    .nav ul {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+    .nav .btn2 {
+        padding: .5rem .54rem;
+    }
+    .nav .btn2, .nav .search {
+        display: block;
+    }
+    .nav .search {
+        background: #f1f1f1;
+        height: .9rem;
+        position: relative;
+    }
+    .nav li {
+        border-bottom: #e7e7e7 solid 1px;
+        width: 100%;
+    }
+    .nav li a.name {
+        padding: 0 .5rem;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: .32rem;
+        text-align: left;
+    }
+    .nav li .list {
+        position: relative;
+        top: 0;
+        width: 100%;
+        border-left: 0;
+        margin-top: 0;
+        box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+        -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0);
+        padding: 0 0 .1rem 0;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    .pageBanner {
+        height: 4.2rem;
+        background-size: auto 3rem;
+    }
+
+    .pageBanner .title {
+        color: #7330b7;
+        text-align: center;
+        position: relative;
+        z-index: 11;
+        top: 1rem;
+    }
+    .pageBanner .title h2 {
+        padding-bottom: .06rem;
+    }
+    .pageBanner .title p {
+        font-size: .3rem;
+    }
+    .pageBanner .bg {
+        width: 6.9rem;
+        height: 2rem;
+        margin-left: -3.45rem;
+        padding: 1.45rem 0 0 0;
+        text-align: center;
+    }
+    .pageNow {
+        display: inline-block;
+        font-size: .22rem;
+        padding-left: .35rem;
+        background-size: .22rem;
+        background-position: left .12rem;
+    }
+    .sideNav {
+        display: none;
+    }
+    .wal {
+        max-width: 8rem ; 
+      }
+      .pageBanner .bg {
+        width: 6.9rem;
+        height: 2rem;
+        margin-left: -3.45rem;
+        padding: 1.45rem 0 0 0;
+        text-align: center;
+    }
+    .sideNav {
+        display: none;
+    }
+    .w1085 {
+        width: 100%;
+    }
+    .major h2.title {
+        text-align: center;
+        font-size: .36rem;
+    }
+    .major .content {
+        font-size: .3rem;
+        line-height: 1.8em;
+    }
+    .major .list {
+        width: 100%;
+        padding-bottom: .5rem;
+    }
+    .major .list div.title {
+        line-height: 1.2rem;
+        font-size: .3rem;
+    }
+}
+@media screen and (max-width:550px) {
+  
+    .wal {
+        margin: 0 .3rem ;
+    }
+}
+
+.foot {
+    border-top: #fff solid .05rem;
+    background: url(./image/foot.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.foot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .88rem;
+    background: url(./image/footbg.png) center repeat-y;
+    background-size: 100%;
+}
+.foot .wal {
+    min-height: 4.14rem;
+    position: relative;
+}
+.foot .logo {
+    width: 2.72rem;
+    padding: .6rem 0 .16rem 0;
+}
+.foot .msg {
+    font-size: .12rem;
+    line-height: .22rem;
+    opacity: .72;
+    padding-bottom: .3rem;
+}
+.foot .share {
+    height: 1.3rem;
+}
+.foot .ewm {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: 0.65rem;
+    bottom: auto;
+    width: 1.46rem;
+}
+.foot .ewm p {
+    font-size: .12rem;
+    text-align: center;
+    line-height: .52rem;
+}
+.foot .link {
+    position: absolute;
+    z-index: 30;
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0.23rem;
+    width: 2.02rem;
+    height: .37rem;
+    line-height: .37rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: .12rem;
+    padding-left: .2rem;
+    cursor: pointer;
+}
+.foot .link:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: .2rem;
+    width: .07rem;
+    height: 100%;
+    background: url(./image/img7.png) center no-repeat;
+    background-size: 100%;
+}
+.foot .link ul {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: 100%;
+    width: 100%;
+    display: none;
+}
+.foot .link li {
+    border-bottom: #eee solid 1px;
+}
+.foot .link li a {
+    display: block;
+    height: .37rem;
+    line-height: .37rem;
+    background: #fff;
+    padding: 0 .2rem;
+}
+.foot .info {
+    font-size: .12rem;
+    line-height: .22rem;
+    opacity: .63;
+}
+
+.righttools {
+    position: fixed;
+    z-index: 999;
+    right: .2rem;
+    bottom: .2rem;
+    width: .52rem;
+}
+.righttools .i.icon-angle-up {
+    background-image: url(./image/img50_1.png);
+    display: none;
+}
+.righttools .i.icon-share {
+    background-image: url(./image/img50_2.png);
+}
+.righttools .i {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.25) center no-repeat;
+    background-size: cover;
+    height: .52rem;
+    border: rgba(255, 255, 255, 0.25) solid 1px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: .1rem;
+}
+.righttools .sharewrapper {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+.righttools .sharewrapper .i.icon-wechat {
+    background-color: #12d900;
+    background-image: url(./image/img50_3.png);
+}
+.righttools .sharewrapper .i.icon-weibo {
+    background-color: #e80000;
+    background-image: url(../image/img50_4.png);
+}
+.righttools .sharewrapper a.i {
+    display: block;
+    width: 100%;
+    margin: 0 0 .1rem 0;
+}
+.righttools .sharewrapper .i.icon-qq {
+    background-color: #5755ff;
+    background-image: url(../image/img50_5.png);
+}
+.bdshare-button-style0-16:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
