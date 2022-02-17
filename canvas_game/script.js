@@ -152,6 +152,7 @@ const height = canvas.clientHeight;
 let isGaming = false;
 let gameCount = 0;
 let isCat = false;
+var temp_timer=null
 
 //背景画板
 const bgPaint = {
@@ -259,7 +260,7 @@ const judge = {
   }
 };
 
-
+//障碍
 block_show = () => {
 
   // (80,650)
@@ -305,7 +306,8 @@ const initGame = () => {
         if (x > block_xy.x[y_index] && Math.abs(x - block_xy.x[y_index]) < 2) {
           girl.stop();
           audio.pause();
-          fore_time.clear()
+          clearInterval(temp_timer)
+          // fore_time.clear()
           forePaint.drawLose();
           audio.currentTime = 0;
           isGaming = false;
@@ -319,8 +321,9 @@ const initGame = () => {
         if (x < block_xy.x[y_index] && Math.abs(x - block_xy.x[y_index]) < 48) {
           girl.stop();
           audio.pause();
+          clearInterval(temp_timer)
+          // fore_time.clear()
           forePaint.drawLose();
-          fore_time.clear()
           audio.currentTime = 0;
           isGaming = false;
           isAllowRun = false;
@@ -335,7 +338,8 @@ const initGame = () => {
         if (x > block_xy.x[y_index] && Math.abs(x - block_xy.x[y_index]) < 2) {
           girl.stop();
           audio.pause();
-          fore_time.clear()
+          clearInterval(temp_timer)
+          // fore_time.clear()
           forePaint.drawLose();
           audio.currentTime = 0;
           isGaming = false;
@@ -347,7 +351,8 @@ const initGame = () => {
         if (x < block_xy.x[y_index] && Math.abs(x - block_xy.x[y_index]) < 48) {
           girl.stop();
           audio.pause();
-          fore_time.clear();
+          clearInterval(temp_timer)
+          // fore_time.clear();
           forePaint.drawLose();
           audio.currentTime = 0;
           isGaming = false;
@@ -363,7 +368,8 @@ const initGame = () => {
         if (y_index > -1 && x - 2 == block_xy.x[y_index]) {
           girl.stop();
           audio.pause();
-          fore_time.clear();
+          clearInterval(temp_timer)
+          // fore_time.clear();
           forePaint.drawLose();
           audio.currentTime = 0;
           isGaming = false;
@@ -377,9 +383,10 @@ const initGame = () => {
         console.log(x)
         if (x > 650) {
           girl.stop();
-          forePaint.drawWin();
           audio.pause();
-          fore_time.clear()
+          clearInterval(temp_timer)
+          // fore_time.clear();
+          forePaint.drawWin();
           audio.currentTime = 0;
           isGaming = false;
           isAllowRun = false;
@@ -392,7 +399,8 @@ const initGame = () => {
         if (y_index > -1 && x + 48 - 5 == block_xy.x[y_index]) {
           girl.stop();
           audio.pause();
-          fore_time.clear();
+          // fore_time.clear();
+          clearInterval(temp_timer)
           forePaint.drawLose();
           audio.currentTime = 0;
           isGaming = false;
@@ -432,7 +440,7 @@ const initGame = () => {
       // girl.walk();
       girl.stop();
       audio.pause();
-      fore_time.clear();
+      // fore_time.clear();
       forePaint.drawLose();
       audio.currentTime = 0;
       isGaming = false;
@@ -467,12 +475,12 @@ const initGame = () => {
       const btnH = 48;
       this.ctx.beginPath();
       this.ctx.rect(670, 290, btnW, btnH);
-      this.ctx.strokeStyle = "#ccc";
+      this.ctx.strokeStyle = "#dfb446";
       this.ctx.stroke();
       this.ctx.font = '20px "微软雅黑"';
       this.ctx.textBaseline = "middle";
       this.ctx.textAlign = "center";
-      this.ctx.fillStyle = "#fff";
+      this.ctx.fillStyle = "#dfb446";
       this.ctx.fillText(text, 730, 314);
     },
     drawStart(text) {
@@ -481,7 +489,7 @@ const initGame = () => {
     },
     clear() {
       this.ctx.clearRect(0, 0, width, height);
-    }
+    },
   };
   timer_show = () => {
     var n = 0
@@ -507,7 +515,8 @@ const initGame = () => {
       // !isRobotEnd && robot.walk();
     } else {
       audio.pause();
-      fore_time.clear()
+      // fore_time.clear();
+      clearInterval(temp_timer)
       audio.currentTime = 0;
 
       // robot.stop();
