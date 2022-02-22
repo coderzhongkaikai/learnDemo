@@ -687,10 +687,10 @@ class Game {
 
                 break
             case 3:
-                audio_src = '1,2,3,4,5,木头人',
-                    text = ['1', '2', '3', '4', '5', '木头人!']
+                audio_src = '1,2,3,4,木头人',
+                    text = ['1', '2', '3', '4', '木头人!']
                 playbackRate = 1.5
-                duration = 4680 / 1.5
+                duration = 4580 / 1.5
                 break
             case 4:
                 audio_src = '1,2,3,木头人'
@@ -917,9 +917,8 @@ foreCanvas.addEventListener("click", e => {
         forePaint.clear();
         a_Game.gameStart();
     }
-    if (a_Game.lv >= 4 || !game_state) { //重新开始
+    else if (a_Game.lv >= 4 || !game_state) { //重新开始
         game_state = true
-
         let lv = 1
         let score = 0
         a_Game = new Game({
