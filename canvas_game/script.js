@@ -2,7 +2,6 @@ const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const bgCanvas = document.getElementById("background");
 const foreCanvas = document.getElementById("foreground");
-// const audio = document.getElementById("audio");
 const width = canvas.clientWidth;
 const height = canvas.clientHeight;
 let isGaming = false;
@@ -56,7 +55,6 @@ const _bottom = {
         const {
             lv = 0, score = 0, use_time = 0
         } = a_Game
-        // console.log(game_time)
         this.clear()
         this.draw()
         this.ctx.font = '20px "微软雅黑"';
@@ -158,7 +156,7 @@ const judge = {
         this.image.onload = () => {
             this.draw();
         };
-        this.image.src = "https://s3.bmp.ovh/imgs/2021/10/727fc27ee8b9a6e7.png";
+        this.image.src = "727fc27ee8b9a6e7.png";
     },
     turn(isLeft) {
         ctx.clearRect(700, (height - 96) / 2, 64, 96);
@@ -483,7 +481,7 @@ class Game {
         let this_game = this
         const girl = new Character(ctx, {
             src: this_game.lv == 4 ?
-                "https://s3.bmp.ovh/imgs/2021/10/035e5eb7556f6cf3.png" : "https://s3.bmp.ovh/imgs/2021/10/70b59c5699cfbab5.png",
+                "035e5eb7556f6cf3.png":"70b59c5699cfbab5.png",
             width: 32,
             height: this_game.lv == 4 ? 32 : 48,
             listener: (x, y, key) => {
@@ -888,12 +886,6 @@ var a_Game = new Game({
     lv: 0,
     score: 0
 })
-
-// let gameLv = 1;
-// let isCat = false;
-// var temp_timer=null
-
-
 _bottom.showBefor()
 bgPaint.drawBg();
 forePaint.drawStart();
@@ -902,9 +894,6 @@ foreCanvas.addEventListener("click", e => {
     if (!isClickBtn || a_Game.isGaming) {
         return;
     }
-    //   isGaming = true;
-    //   gameCount++;
-    //   isCat = gameCount > 5;
     //创建新的0，1，2，3，4 注意创建的Game实例lv的大小
     console.log(a_Game.lv)
     if (a_Game.lv < 4 && game_state) {
