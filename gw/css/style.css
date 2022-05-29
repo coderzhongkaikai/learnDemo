@@ -365,6 +365,17 @@
         cursor: pointer;
     }
 
+    .right {
+        float: left;
+        width: 100%;
+        /* margin-left: 50px; */
+    }
+
+    .bus-img {
+        width: 100%;
+        height: 145px;
+    }
+
     /* .ticket-content {
         display: block !important;
     } */
@@ -410,6 +421,17 @@
     .ticket-content {
         display: flex;
     }
+
+    .right {
+        float: left;
+        width: 50%;
+        /* margin-left: 50px; */
+    }
+
+    .bus-img {
+        width: 100%;
+        height: 180px;
+    }
 }
 
 /* pc  */
@@ -451,5 +473,16 @@
 
     .ticket-content {
         display: flex;
+    }
+
+    .right {
+        float: left;
+        width: 50%;
+        /* margin-left: 50px; */
+    }
+
+    .bus-img {
+        width: 80%;
+        height: 508px;
     }
 }
