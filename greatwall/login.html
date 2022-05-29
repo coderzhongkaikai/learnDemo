@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet"  href="./css/common.css"/>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div style="margin: 0 50px">
+        <div class="login">
+            <div>
+                <div class="one">
+                    <div class="user"><img src="./images/user.png" alt=""></div>
+                    <div class="text-login">LOG IN</div>
+                </div>
+                <div class="item-row">
+                    <span class="label">USER NAME</span>
+                    <input type="text" name="name" id="name" class="input" maxlength="10">
+                    <div class="error-text error-name">user name con't empty</div>
+                </div>
+                <div class="item-row">
+                    <span class="label">PASSWORD</span>
+                    <input type="password" name="password" id="password" class="input" maxlength="6">
+                    <div class="error-text error-password">password con't empty</div>
+                </div>
+                <div class="btn-submit" onclick="login()">LOG IN</div>
+                <div class="error-text incorrect">user name or password is incorrect </div>
+            </div>
+        </div>
+        <div class="dialog">
+            <div class="dialog-body">
+                <div class="hint">to sign up,please</div>
+                <div class="btn-group">
+                    <span class="btn cancel" onclick="cancelDialog()">cancel</span>
+                    <span class="btn confirm" onclick="toSign()">sign up</span>
+                </div>
+            </div>
+        </div>
+        <iframe src="./footer.html" frameborder="0" class="foot"></iframe>
+    </div>
+    <script src="./js/login.js"> </script>
+</body>
+</html>

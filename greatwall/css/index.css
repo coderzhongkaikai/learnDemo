@@ -1,0 +1,263 @@
+.header {
+    overflow: hidden;
+}
+.header .login-sign {
+    float: left;
+    overflow: hidden;
+    margin: 15px 0 0 10px;
+}
+.header .img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.header .img img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.sign {
+    float: left;
+    color: #fff;
+    background: black;
+    border-radius: 6px;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.user-exit {
+    float: right;
+}
+.user-info {
+    width: 55px;
+    height: 55px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.user-info-img {
+    width:100%;
+    height: 100%;
+}
+.exit {
+    float: right;
+    color: #fff;
+    background: black;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+}
+.title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 64px;
+}
+.tab-icon {
+    overflow: hidden;
+}
+.tab-icon  img{
+    float: right;
+    width: 135px;
+    height: 100px;
+}
+.tab-group {
+    display: flex;
+    /* justify-content: center; */
+}
+.tab-group div{
+    margin-left: 45px;
+    font-size: 23px;
+    background: #BD9751;
+    line-height: 50px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+.tab-icon-home {
+    width: 64px;
+}
+.home-content {
+    overflow: hidden;
+}
+.nike-name {
+    font-size: 26px;
+    font-weight: bold;
+}
+.desc-content {
+    font-size: 30px;
+}
+.foot{
+    width: 100%;
+    height: 160px;
+}
+.ticket-content, .Accommodation-content, .shop-content {
+    display: none;
+   font-size: 18px;
+   margin-bottom: 40px;
+   overflow: hidden;
+}
+.left {
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+}
+.left {
+    width: 25%;
+    min-width: 300px;
+}
+.right {
+    float: left;
+    width: 60%;
+    margin-left: 150px;
+}
+.right-row-item {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    min-width: 700px;
+}
+.right-row-item:nth-child(2) {
+    margin-top: 20px;
+}
+.ticket-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.bus , .map{
+    display: flex;
+    margin: 30px;
+}
+.bus-img {
+    width: 550px;
+    height: 180px;
+}
+.bottom-text {
+    margin-top: 50px;
+}
+.map-desc {
+    height: 180px;
+    display: flex;
+    align-items: center;
+}
+.left-desc {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.food-content {
+    display: none;
+    overflow: hidden;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.food-left, .food-right {
+    float: left;
+    width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    min-width: 600px;
+}
+.food-right {
+    margin-left: 150px;
+}
+.Accommodation-right {
+    height: 619px;
+}
+.food-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.item-food {
+    display: flex;
+    margin-bottom: 35px;
+    min-width: 565px;
+}
+.food-img-4 {
+    width: 240px;
+    height: 245px;
+    margin-right: 35px;
+}
+.food-img {
+    width: 240px;
+    height: 155px;
+    margin-right: 35px;
+}
+.star-img {
+    width: 20px;
+    height: 20px;
+}
+.food-desc {
+    width: 240px;
+}
+.food-desc div{
+    margin-bottom: 6px;
+}
+
+.food-right-content {
+    padding: 0 50px;
+    margin-bottom: 60px;
+}
+.food-right-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.food-right-img img {
+    width: 200px;
+}
+.Accommodation-content {
+    display: none;
+
+}
+.sub-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.shop-right {
+    height: 429px;
+}
+.icon-ticketl, .icon-hotels, .icon-shop, .icon-food {
+    display: none;
+}
+.like-btn {
+    margin-left: 30px;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    background: #BD9751;
+    color: #fff;
+    border-radius: 6px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+}
+.dialog-body {
+    z-index: 100;
+    background: #fff;
+    width: 420px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.hint {
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+}
