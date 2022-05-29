@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div style="margin:0 50px">
+        <div class="header">
+            <div class="login-sign">
+                <!--<div class="img" onclick="toLogin()">
+                    <img src="./images/login.png" alt="">
+                </div>-->
+                <div class="sign" onclick="toLogin()">sign in</div>
+                <div class="sign" onclick="toSign()">sign up</div>
+            </div>
+            <div class="user-exit">
+                <div class="exit" onclick="handleExit()">
+                    <span>exit</span>
+                    <img src="./images/exit (1).png" alt="" style="width:35px;vertical-align: middle;">
+                </div>
+                <div class="user-info" onclick="toLike()"><img class="user-info-img" src="./images/user.png" alt="">
+                </div>
+            </div>
+            <h2 class="title">GREATWALL</h2>
+        </div>
+        <div class="tab-icon">
+            <img class="icon-wall" src="./images/icon_wall.png" alt="">
+            <img class="icon-ticketl" src="./images/icon_tickets.png" alt="">
+            <img class="icon-hotels" src="./images/icon_hotels.png" alt="">
+            <img class="icon-shop" src="./images/icon_shop.png" alt="">
+            <img class="icon-food" src="./images/icon_food.png" alt="">
+        </div>
+        <div class="tab-group">
+            <img onClick="handleHome()" class="tab-icon-home" src="./images/icon_home_active.png" alt="">
+            <div onClick="handleTick()" class="ticket-tab">Ticket and transport</div>
+            <div onclick="handleFood()" class="food-tab">Food</div>
+            <div onclick="handleAccommodation()" class="Accommodation-tab">Accommodation</div>
+            <div onclick="handleShop()" class="shop-tab">Shopping</div>
+        </div>
+        <!-- 描述和图片 -->
+        <div style="margin-top: 70px;">
+            <!-- home -->
+            <div class="home">
+                <div class="home-content">
+                    <div class="desc-one">
+                        <img class="desc-one-img" src="./images/home-1.jpg" align="right" hspace="50" vspace="20">
+                        <p class="nike-name">Brief view:</p>
+                        <p class="desc-content">
+                            The Great Wall, also known as
+                            the Great Wall of China, is an
+                            ancient Chinese military
+                            fortification, a tall, strong, and
+                            continuous wall that was used to
+                            restrict the movement of enemy
+                            horsemen. The Great Wall is not
+                            just an isolated wall, but a
+                            defense system that combines a
+                            large number of walls, barriers,
+                            pavilions and markers.
+                            The history of the construction of the Great Wall dates back to the Western Zhou Dynasty,
+                            from which the famous story of "Beacon and Fire", which took place in the capital city of
+                            Haojing (present-day Xi'an,
+                            Shaanxi), originated. During the Spring and Autumn Period and the Warring States Period,
+                            the Great Wall entered its first climax, but the length of the wall was relatively short.
+                            After Qin destroyed the six kingdoms and unified the country, Qin Shi Huang connected and
+                            repaired the Great Wall of the Warring States,
+                            which became known as the Great Wall of 10,000 miles. The Ming Dynasty was the last dynasty
+                            to repair the Great Wall,
+                            and most of the Great Wall that we see today was built at this time.
+                        </p>
+                    </div>
+                    <div>
+                        <img class="desc-one-img" src="./images/home2.jpg" align="left" hspace="50" vspace="15">
+                        <p class="desc-content">
+                            During the Qin Dynasty, there was a woman named Meng Jiangnu, soon after her husband was
+                            dragged to build the Great Wall, and there was no news of her for several years. Meng
+                            Jiangnu was so grief-stricken that she cried down the Great Wall. When Qin Shi Huang found
+                            out about this, he threatened her, but Meng Jiangnu pretended to agree to meet her husband
+                            for the last time, and after putting on her cold clothes, she crashed to death on a rock.
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <h4>Open daily from 6:30-16:30</h4>
+                </div>
+            </div>
+            <!-- ticket -->
+            <div class="ticket-content">
+                <div class="left">
+                    <div class="ticket-title">Ticket info</div>
+                    <div class="left-desc">
+                        <div>
+                            <div>Adult ticket: <span style="color: red;">40rmb</span> </div>
+                            <div>Student ticket: <span style="color: red;">20rmb</span> </div>
+                            <div>Senior ticket (60 years old and above): <span style="color: red;">Free</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-row-item">
+                        <div class="ticket-title">bus</div>
+                        <div class="bus">
+                            <div>
+                                <p>No.877 Deshengmen -Badaling
+                                    Departure from Deshengmen: 6:00-12:00 Departure from Great Wall: 10:30-17:00
+                                </p>
+                                <p class="bottom-text">The Great Wall Bus/Darling Bus From National Library Subway
+                                    Station Exit C 9:00-15:30</p>
+                            </div>
+                            <div>
+                                <img class="bus-img" src="./images/ticket-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-row-item">
+                        <div class="ticket-title">Self drive map</div>
+                        <div class="map">
+                            <div class="map-desc">By car: Take the Badaling Expressway from the Madian Bridge on the
+                                North Third Ring Road to the exit of the scenic spot</div>
+                            <img class="bus-img" src="./images/ticket-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- food -->
+            <div class="food-content">
+                <div class="food-left">
+                    <div class="food-title">Restaurant</div>
+                    <div class="item-food">
+                        <img src="./images/food-left-1.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div>Quanjude Roast Duck</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: Building 14</div>
+                            <div>Qianmen West Street</div>
+                            <div>Xuanwu District</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('food-1')">like</div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/food-left-2.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div>Doichi Yakiniku Restaurant</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: No.38</div>
+                            <div>Qianmenwai Street</div>
+                            <div>Beijing</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('food-2')">like</div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/food-left-3.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div>Dong Lai Shun</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: No. 34, Haidian</div>
+                            <div>Street, Haidian District</div>
+                            <div>Beijing</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('food-3')">like</div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/food-left-4.jpg" alt="" class="food-img-4">
+                        <div class="food-desc" style="padding-top: 46px;">
+                            <div>Yakinikwan Restaurant</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: No. 58, Nanlishi Road</div>
+                            <div>Xicheng District</div>
+                            <div> Beijingt</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('food-4')">like</div>
+                    </div>
+                </div>
+                <div class="food-right">
+                    <div class="food-title">Chinese snack</div>
+                    <div class="food-right-content">
+                        <div class="food-right-title">Sugarloaf</div>
+                        <div class="food-right-img">
+                            <img src="./images/food-right-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="food-right-content">
+                        <div class="food-right-title">donkey roll</div>
+                        <div class="food-right-img">
+                            <img src="./images/food-right-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="food-right-content">
+                        <div class="food-right-title">Peas and Yellow</div>
+                        <div class="food-right-img">
+                            <img src="./images/food-right-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accommodation  -->
+            <div class="Accommodation-content">
+                <div class="food-left">
+                    <div class="food-title">Hotels</div>
+                    <div class="item-food">
+                        <img src="./images/Accommodation-1.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">China World Summit Wing</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: No.1</div>
+                            <div>Jianguomenwai Street</div>
+                            <div>Chaoyang District, Beijing</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('Accommodation-1')">like</div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/Accommodation-2.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">JW Marriott Hotel Beijing</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: No. 83 Jianguo Road</div>
+                            <div>China Central Place</div>
+                            <div>Chaoyang District, Beijing </div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('Accommodation-2')">like</div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/Accommodation-3.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">Beijing Hilton Hotel</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Address: No. 71,</div>
+                            <div>Dongwai Street</div>
+                            <div>Yanqing, Beijing</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('Accommodation-3')">like</div>
+                    </div>
+                </div>
+                <div class="food-right Accommodation-right">
+                    <div class="food-title">BNB</div>
+                    <div class="item-food">
+                        <img src="./images/Accommodation-4.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">My Home, My House B&B</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Contact:13688888</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('Accommodation-4')">like</div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/Accommodation-5.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">Serenity B&B</div>
+                            <div>Rating:
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                                <img class="star-img" src="./images/star.png" alt="">
+                            </div>
+                            <div>Contact:13688899</div>
+                        </div>
+                        <div class="like-btn" onclick="handleLike('Accommodation-5')">like</div>
+                    </div>
+                </div>
+            </div>
+            <!-- shop -->
+            <div class="shop-content">
+                <div class="food-left">
+                    <div class="food-title">Shopping Malls</div>
+                    <div class="item-food">
+                        <img src="./images/shop-1.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">Beijing SKP</div>
+                            <div>Address: No. 87</div>
+                            <div>Jianguo Road</div>
+                            <div>Chaoyang District,Beijing</div>
+                        </div>
+                    </div>
+                    <div class="item-food">
+                        <img src="./images/shop-2.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">Beijing Guomao Mall</div>
+                            <div>Address: No.1</div>
+                            <div>Jianguomenwai Street</div>
+                            <div>Chaoyang District, Beijing </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food-right shop-right">
+                    <div class="food-title">Small Visitor Shops</div>
+                    <div class="item-food">
+                        <img src="./images/shop-3.jpg" alt="" class="food-img">
+                        <div class="food-desc">
+                            <div class="sub-title">Beijing Great Wall Souvenir Shop</div>
+                            <div>Address: No.2 West Chang'an Street, Xicheng District, Beijing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe src="./footer.html" frameborder="0" class="foot"></iframe>
+
+    </div>
+    <div class="dialog">
+        <div class="dialog-body">
+            <!-- <div class="hint">collect success</div> -->
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
