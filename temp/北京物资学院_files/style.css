@@ -359,7 +359,7 @@ button {
   height: 60px;
   line-height: 60px;
   position: fixed;
-  background: #005bac;
+  background: #eea200;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4)
 }
 
@@ -498,7 +498,7 @@ button {
 
 /*footer*/
 .bwu-wrapFooter {
-  background: url(../images2020/bwubottombg.png) no-repeat top center #065eb1;
+  background: url(../images2020/bwubottombg.png) no-repeat top center #eea200;
 }
 
 .bwu-footer {
