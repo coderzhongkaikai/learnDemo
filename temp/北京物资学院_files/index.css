@@ -145,7 +145,7 @@ html[xmlns] .slides {
 }
 
 .readMore a {
-	color: #005bac;
+	color:  #eea200;
 }
 
 .readMore a i {
@@ -182,7 +182,7 @@ html[xmlns] .slides {
 }
 
 .list-date01 {
-	border-bottom: 1px solid #005bac;
+	border-bottom: 1px solid  #eea200;
 	height: 34px;
 	line-height: 34px;
 }
@@ -208,7 +208,7 @@ html[xmlns] .slides {
 	line-height: 24px;
 	height: 24px;
 	overflow: hidden;
-	color: #005bac;
+	color:  #eea200;
 	margin: 8px 0 6px;
 }
 
@@ -254,7 +254,7 @@ html[xmlns] .slides {
 	line-height: 24px;
 	height: 24px;
 	overflow: hidden;
-	color: #005bac;
+	color:  #eea200;
 	font-weight: normal;
 }
 
@@ -410,7 +410,7 @@ html[xmlns] .slides {
 	content: '';
 	width: 4px;
 	height: 4px;
-	background-color: #005bac;
+	background-color: #eea200;
 	position: absolute;
 	left: 0;
 	top: 50%;
@@ -772,7 +772,7 @@ html[xmlns] .slides {
 
 /*??????*/
 .wrap_mode04 {
-	background: #005bac url(../images2020/bwubg.png) repeat;
+	background: #eea200 url(../images2020/bwubg.png) repeat;
 	padding-bottom: 46px;
 }
 
