@@ -21,7 +21,7 @@
         }
 
         body {
-            background-color: mistyrose;
+            background-color: rgb(0, 0, 0);
         }
 
         .box {
@@ -94,17 +94,31 @@
                 transform: scale(0.5) rotate(45deg);
             }
         }
+
+        .start_hidde {
+            opacity: 0;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
-    <p class="name ">蒋立</p>
-    <div class="animate_box  animate__animated animate__backInDown ">
+    <p class="name start_hidde" id="name_p">蒋立</p>
+    <div class="animate_box">
         <div class="box ">
         </div>
     </div>
 </body>
 
 </html>
+<script>
+    function delay_show() {
+        document.getElementById("name_p").className = 'name animate__animated animate__backInDown'
+    }
+
+    window.onload = function () {
+        setTimeout(delay_show, 2000)
+
+    }
+</script>
