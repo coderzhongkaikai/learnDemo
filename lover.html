@@ -147,7 +147,7 @@
         document.getElementById("start_btn").className = 'start_hidde'
         document.getElementById("start_show").className = 'animate__animated animate__backInDown'
         document.getElementById("animate_box").className = 'animate__animated animate__backInDown'
-        document.getElementById("name_p").innerHTML = window.location.search ? window.location.search : 'lover'
+        document.getElementById("name_p").innerHTML = window.location.search ? decodeURI(window.location.search.split('?')[1]): 'lover'
         setTimeout(delay_show, 3000)
 
     }
