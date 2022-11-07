@@ -13,15 +13,24 @@
             font-size: 50px;
             font-weight: 800;
             color: #e36788;
-            transition: all 0.5s;
+            transition: all 1s;
         }
 
-        .animate_box {
+        .start_btn {
+            margin-top: 210px;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 800;
+            color: #e36788;
+            transition: all 1s;
+        }
+
+        #animate_box {
             margin-top: 210px;
         }
 
         body {
-            background-color: mistyrose;
+            background-color: #ece5e7;
         }
 
         .box {
@@ -94,17 +103,51 @@
                 transform: scale(0.5) rotate(45deg);
             }
         }
+
+        #music {
+            width: 150px;
+            height: 50px;
+        }
+
+        .start_hidde {
+            opacity: 0;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
-    <p class="name ">张佳璐</p>
-    <div class="animate_box  animate__animated animate__backInDown ">
+    <audio id="music" src="tiantiande.mp3" loop="loop"></audio>
+</body>
+<p id="start_btn" class="start_btn" onclick="start()">点我开始</p>
+
+<div id="start_show" class="start_hidde">
+    <p class="name start_hidde" id="name_p">蒋立</p>
+    <div id="animate_box">
         <div class="box ">
         </div>
     </div>
+</div>
 </body>
 
 </html>
+<script>
+    window.onload = function () {
+
+    }
+
+    function delay_show() {
+        document.getElementById("name_p").className = 'name animate__animated animate__backInDown'
+    }
+
+    function start() {
+        var audio = document.getElementById("music");
+        audio.play();
+        document.getElementById("start_btn").className = 'start_hidde'
+        document.getElementById("start_show").className = 'animate__animated animate__backInDown'
+        document.getElementById("animate_box").className = 'animate__animated animate__backInDown'
+        setTimeout(delay_show, 3000)
+
+    }
+</script>
