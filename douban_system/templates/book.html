@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+{{type}}
+{% endblock %}
+{% block content %}
+<style>
+    .content_box {
+        padding: 20px 150px;
+        display: flex
+    }
+</style>
+
+<!--     <div  class="title_top">-->
+
+<!--     </div>-->
+
+<div class="content_box">
+    <!--         <div class="col-sm-4">-->
+    <div class="post-list">
+        {% for item  in list %}
+        <div class="col-sm-4">
+            <div class="post-list-item">
+                <div class="col-xs-3">
+                    <img class="post-object" src={{ item.image }} />
+                </div>
+                <div class="col-xs-7">
+                    <div class="post-heading">
+                        <a href="search/{{ item.name }}">{{ item.name }}</a>
+                    </div>
+                    <p class="text-muted">
+                        <p>
+
+                            时间：<span class="time_date">{{ item.date }}</span>
+                        </p>
+
+                        <p>
+                            评分：{{ item.mark }}
+                        </p>
+                        <p>
+                            热度：
+                            {% if  item.hot %} {{item.hot}} {% else%} 0 {% endif %}
+                        </p>
+
+                        <!--                        <p>-->
+                        <!--                       简介：{{ movie.details }}-->
+                        <!--                        </p>-->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+        <div class="col-sm-4">
+            <div class="post-list-item">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="post-list-item">
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="post-list-item">
+            </div>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+<script>
+
+</script>
+{% endblock %}

@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+{{type}}
+{% endblock %}
+{% block content %}
+<style>
+    .content_box {
+        padding: 20px 150px;
+    }
+    .input_pinglun{
+
+    }
+    .pinglun_item{
+        margin-top:5px
+    }
+    .pinglun_box{
+         padding: 5px 10px;
+    border: 1px solid #337ab7;
+    }
+
+
+</style>
+
+<!--     <div  class="title_top">-->
+
+<!--     </div>-->
+
+<div class="content_box">
+    <!--         <div class="col-sm-4">-->
+    <div class="post-list">
+        {% for item in list %}
+        <div class="col-sm-8">
+            <div class="post-list-item">
+                <div class="col-xs-3">
+                    <img class="post-object" src={{ item.image }} />
+                </div>
+                <div class="col-xs-7">
+                    <div class="post-heading">{{ item.name }}</div>
+
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur aut doloribus optio
+                        eligendi id expedita recusandae...</p> -->
+                    <p class="text-muted">
+                        <p>
+                            时间：{{ item.date }}
+                        </p>
+                        {% if  item.language %}
+                        <p>
+                            语言：{{ item.language }}
+                        </p>
+                        {% endif   %}
+                        {% if  item.language %}
+                        <p>
+                            国家：{{ item.country }}
+                        </p>
+                        {% endif   %}
+                        <p>
+                            评分：{{ item.mark }}
+                        </p>
+                        <p>
+                            简介：{{ item.details }}
+                        </p>
+                        <div class="pinglun_box">
+                            评论区:
+                              {% for pinglun_item in item.pinglun %}
+                                <p class="pinglun_item"> {{ pinglun_item }}</p>
+                              {% endfor %}
+
+                        </div>
+                        <p class="pinglun">
+                       <form role="form" action="/{{title}}/search/{{item.name}}" method="POST">
+                       {%  csrf_token %}
+                          <div class="form-group">
+                            <label for="name">评论框</label>
+                            <textarea name="pinglun" class="form-control" rows="3" placeholder="输入你的评论"></textarea>
+                          </div>
+                          <button type="submit" class="btn success">
+                                发布
+                        </button>
+                        </form>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="input_pinglun">
+
+
+<!--                        <form class="navbar-form search-form" action="/{{title}}/detail/{{item.name}}" method="POST">-->
+<!--                {%  csrf_token %}-->
+<!--                            -->
+<!--                <div class="form-group">-->
+<!--                    <label for="name">评论框</label>-->
+<!--                    <textarea name="pinglun" class="form-control" placeholder="输入你的评论"/>-->
+<!--                </div>-->
+<!--                <button type="submit" class="btn success">-->
+<!--                        发布-->
+<!--                    <span class="glyphicon glyphicon-submit"></span>-->
+<!--                </button>-->
+<!--            </form>-->
+        </div>
+
+        {% endfor %}
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+
+<script>
+
+
+</script>
+{% endblock %}
